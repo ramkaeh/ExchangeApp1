@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ExchangeApp</string>
+    <string-array name="curriencies">
+        <item>EUR</item>
+        <item>PLN</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>HKD</item>
+        <item>SGD</item>
+        <item>SEK</item>
+        <item>KRW</item>
+        <item>NOK</item>
+        <item>INR</item>
+    </string-array>
+    <string name="fromText">Currency</string>
+    <string name="quan">Quantity</string>
+    <string name="toText">Currency</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

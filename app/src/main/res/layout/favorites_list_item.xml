@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsedRelLayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:id="@+id/txtView1"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_droparrow"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:id="@+id/btnDownArrow"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelLayout"
+            android:id="@+id/expandedRelLayout"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily open:"
+                android:id="@+id/OpenText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily open"
+                android:id="@+id/OpenText1"
+                android:layout_below="@+id/OpenText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily close:"
+                android:id="@+id/Close1Text"
+                android:layout_below="@+id/OpenText1"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily close:"
+                android:id="@+id/CloseText"
+                android:layout_below="@+id/Close1Text"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_uparrow"
+                android:layout_below="@+id/CloseText"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnUpArrow"/>
+
+
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
